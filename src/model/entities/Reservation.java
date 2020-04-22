@@ -48,9 +48,9 @@ public class Reservation {
 	}
 
 	public long duration() {
-
+		// coloca a data em milisegundo
 		long diff = checkOut.getTime() - checkIn.getTime();
-
+		// converte em dias
 		return TimeUnit.DAYS.convert(diff, TimeUnit.MILLISECONDS);
 
 	}
